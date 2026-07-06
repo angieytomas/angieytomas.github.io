@@ -1,0 +1,26 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+
+const enHref = `${import.meta.env.BASE_URL}en/`;
+const esHref = `${import.meta.env.BASE_URL}es/`;
+---
+
+<MainLayout
+  lang="en"
+  title="Angie and Tomas"
+  description="Choose English or Spanish for Angie and Tomas's temporary wedding website."
+>
+  <main class="flex min-h-screen items-center justify-center px-4 py-12 sm:px-6">
+    <div class="glass-card max-w-xl rounded-[2rem] p-8 text-center sm:p-10">
+      <p class="text-sm font-semibold uppercase tracking-[0.32em] text-olive">Choose your language</p>
+      <h1 class="mt-4 font-display text-5xl text-ink">Angie & Tomas</h1>
+      <p class="mt-4 text-base leading-8 text-ink/75">
+        Temporary wedding website with the key dates, Buenos Aires plans, RSVP, and travel notes. Choose your preferred language below.
+      </p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
+        <a class="rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white" href={enHref}>English</a>
+        <a class="rounded-full border border-ink/10 bg-white/70 px-6 py-3 text-sm font-semibold text-ink" href={esHref}>Español</a>
+      </div>
+    </div>
+  </main>
+</MainLayout>

@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cormorant Garamond", serif;
+  --font-body: "Manrope", sans-serif;
+  --color-sand: #f7f0e8;
+  --color-almond: #efe2d1;
+  --color-sky: #cfe4ee;
+  --color-terracotta: #c88468;
+  --color-olive: #66725a;
+  --color-ink: #25303a;
+  --shadow-soft: 0 18px 40px rgba(37, 48, 58, 0.08);
+}
+
+:root {
+  color-scheme: light;
+  --page-bg: #f7f0e8;
+  --page-bg-soft: #fcf8f3;
+  --surface: rgba(255, 255, 255, 0.7);
+  --surface-strong: rgba(255, 255, 255, 0.86);
+  --border: rgba(37, 48, 58, 0.08);
+  --text: #25303a;
+  --muted: rgba(37, 48, 58, 0.72);
+  --accent: #c88468;
+  --accent-soft: #cfe4ee;
+  --olive: #66725a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.82), transparent 28%),
+    linear-gradient(180deg, #f7f0e8 0%, #fcf8f3 48%, #f3e6d8 100%);
+  color: var(--text);
+  font-family: var(--font-body);
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: rgba(200, 132, 104, 0.18);
+}
+
+.page-shell {
+  position: relative;
+  overflow: hidden;
+}
+
+.page-shell::before,
+.page-shell::after {
+  position: absolute;
+  content: "";
+  pointer-events: none;
+  border-radius: 999px;
+  filter: blur(18px);
+}
+
+.page-shell::before {
+  top: 6rem;
+  right: -8rem;
+  width: 18rem;
+  height: 18rem;
+  background: rgba(207, 228, 238, 0.45);
+}
+
+.page-shell::after {
+  top: 38rem;
+  left: -6rem;
+  width: 16rem;
+  height: 16rem;
+  background: rgba(200, 132, 104, 0.14);
+}
+
+.glass-card {
+  background: var(--surface);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 40px rgba(37, 48, 58, 0.08);
+}
+
+.section-anchor {
+  scroll-margin-top: 6.5rem;
+}
+
+.bg-hero-glow {
+  background-image:
+    radial-gradient(circle at top, rgba(207, 228, 238, 0.9), transparent 45%),
+    radial-gradient(circle at 80% 20%, rgba(200, 132, 104, 0.18), transparent 25%);
+}

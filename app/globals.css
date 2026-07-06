@@ -2,30 +2,12 @@
 
 :root {
   color-scheme: light;
-  --background: #f5f1eb;
-  --foreground: #1d1a19;
-  --muted: rgba(29, 26, 25, 0.66);
-  --surface: rgba(255, 252, 247, 0.68);
-  --panel: rgba(255, 252, 247, 0.76);
-  --panel-strong: rgba(255, 252, 247, 0.92);
-  --line: rgba(29, 26, 25, 0.1);
-  --accent: #6f2a33;
-  --accent-soft: #7f8769;
-  --font-sans: var(--font-inter), "Inter", "Helvetica Neue", Arial, sans-serif;
-  --font-serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
-}
-
-html[data-theme="dark"] {
-  color-scheme: dark;
-  --background: #111111;
-  --foreground: #f0ebe3;
-  --muted: rgba(240, 235, 227, 0.66);
-  --surface: rgba(255, 255, 255, 0.04);
-  --panel: rgba(255, 255, 255, 0.05);
-  --panel-strong: rgba(255, 255, 255, 0.08);
-  --line: rgba(255, 255, 255, 0.12);
-  --accent: #a55d63;
-  --accent-soft: #7c8563;
+  --background: #f6f1ea;
+  --foreground: #171412;
+  --muted: rgba(23, 20, 18, 0.62);
+  --line: rgba(23, 20, 18, 0.12);
+  --surface-soft: rgba(255, 252, 248, 0.68);
+  --surface-strong: rgba(255, 252, 248, 0.92);
 }
 
 html {
@@ -36,11 +18,10 @@ body {
   margin: 0;
   min-width: 320px;
   background:
-    radial-gradient(circle at 15% 15%, rgba(125, 133, 101, 0.12), transparent 30%),
-    radial-gradient(circle at 85% 10%, rgba(111, 42, 51, 0.12), transparent 26%),
-    linear-gradient(180deg, var(--background) 0%, color-mix(in srgb, var(--background) 90%, #e9e1d7) 100%);
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.72), transparent 26%),
+    linear-gradient(180deg, #f6f1ea 0%, #f2ece4 100%);
   color: var(--foreground);
-  font-family: var(--font-sans);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
 }
 
@@ -54,137 +35,5 @@ a {
 }
 
 ::selection {
-  background: color-mix(in srgb, var(--accent) 20%, transparent);
-}
-
-.font-serif-display {
-  font-family: var(--font-serif);
-}
-
-.eyebrow {
-  font-size: 0.72rem;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-.badge {
-  display: inline-flex;
-  align-items: center;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  background: var(--surface);
-  padding: 0.55rem 0.95rem;
-  font-size: 0.72rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-.cta-primary,
-.cta-secondary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 999px;
-  padding: 0.95rem 1.35rem;
-  font-size: 0.82rem;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  transition: transform 180ms ease, border-color 180ms ease, background-color 180ms ease;
-}
-
-.cta-primary {
-  background: var(--foreground);
-  color: var(--background);
-}
-
-.cta-secondary {
-  border: 1px solid var(--line);
-  background: var(--panel);
-  color: var(--foreground);
-}
-
-.cta-primary:hover,
-.cta-secondary:hover {
-  transform: translateY(-1px);
-}
-
-.section-frame {
-  padding: 1rem;
-}
-
-.section-inner {
-  margin: 0 auto;
-  max-width: 92rem;
-  border: 1px solid var(--line);
-  border-radius: 2.4rem;
-  background: color-mix(in srgb, var(--panel) 86%, transparent);
-  padding: 2rem;
-  box-shadow: 0 20px 70px rgba(25, 21, 19, 0.04);
-}
-
-.editorial-card {
-  border: 1px solid var(--line);
-  border-radius: 1.6rem;
-  background: var(--surface);
-  padding: 1.2rem;
-}
-
-.hero-orb {
-  position: absolute;
-  width: 24rem;
-  height: 24rem;
-  border-radius: 999px;
-  filter: blur(20px);
-  pointer-events: none;
-}
-
-.hero-orb-left {
-  left: -8rem;
-  top: 2rem;
-  background: rgba(127, 135, 105, 0.18);
-}
-
-.hero-orb-right {
-  right: -8rem;
-  bottom: 4rem;
-  background: rgba(111, 42, 51, 0.14);
-}
-
-.gallery-card {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 1.9rem;
-  padding: 1.3rem;
-}
-
-.gallery-overlay {
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.16)),
-    radial-gradient(circle at top right, rgba(255, 255, 255, 0.18), transparent 26%);
-}
-
-@media (min-width: 640px) {
-  .section-frame {
-    padding: 1.25rem 1.5rem;
-  }
-
-  .section-inner {
-    padding: 2.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .section-frame {
-    padding: 1.25rem 2.5rem;
-  }
-
-  .section-inner {
-    padding: 3.25rem;
-  }
+  background: rgba(23, 20, 18, 0.08);
 }

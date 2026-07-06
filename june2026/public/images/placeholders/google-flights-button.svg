@@ -1,0 +1,9 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="32" fill="#F7F3EC"/>
+  <rect x="120" y="120" width="960" height="480" rx="24" fill="#FFF8EE" stroke="#E8C9B8" stroke-width="4"/>
+  <rect x="220" y="220" width="280" height="70" rx="16" fill="#2E2A26" fill-opacity="0.1"/>
+  <rect x="220" y="320" width="470" height="24" rx="12" fill="#2E2A26" fill-opacity="0.12"/>
+  <rect x="220" y="360" width="380" height="24" rx="12" fill="#2E2A26" fill-opacity="0.12"/>
+  <rect x="220" y="430" width="260" height="72" rx="20" fill="#B5532E"/>
+  <text x="220" y="610" fill="#B5532E" font-family="Arial, sans-serif" font-size="44" font-weight="700">Google Flights date grid</text>
+</svg>

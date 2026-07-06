@@ -1,15 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter"
-});
 
 export const metadata: Metadata = {
   title: "Angie and Tomas",
-  description: "Editorial destination wedding guide for Buenos Aires."
+  description: "Minimal wedding website for Buenos Aires."
 };
 
 export default function RootLayout({
@@ -18,8 +12,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.variable}>{children}</body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   );
 }

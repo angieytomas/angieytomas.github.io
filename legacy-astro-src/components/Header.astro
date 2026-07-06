@@ -1,0 +1,38 @@
+---
+import LanguageSwitcher from "./LanguageSwitcher.astro";
+
+interface NavItem {
+  label: string;
+  href: string;
+}
+
+interface Props {
+  nav: NavItem[];
+  switcher: {
+    label: string;
+    href: string;
+    title: string;
+  };
+  homeLabel: string;
+}
+
+const { nav, switcher, homeLabel } = Astro.props;
+---
+
+<header class="sticky top-0 z-40 border-b border-white/50 bg-[rgba(247,240,232,0.8)] backdrop-blur-lg">
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-3 sm:px-6">
+    <a href="#" class="font-display text-2xl font-semibold tracking-[0.18em] text-ink">
+      {homeLabel}
+    </a>
+    <nav class="hidden items-center gap-5 md:flex">
+      {
+        nav.map((item) => (
+          <a class="text-sm font-medium text-ink/80 transition hover:text-ink" href={item.href}>
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+    <LanguageSwitcher label={switcher.label} href={switcher.href} title={switcher.title} />
+  </div>
+</header>

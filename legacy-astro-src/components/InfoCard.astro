@@ -1,0 +1,15 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  meta?: string;
+}
+
+const { title, description, meta } = Astro.props;
+---
+
+<article class="glass-card rounded-[1.5rem] p-6">
+  <h3 class="font-display text-3xl text-ink">{title}</h3>
+  <p class="mt-3 text-sm leading-7 text-ink/75">{description}</p>
+  {meta && <p class="mt-4 text-xs font-semibold uppercase tracking-[0.24em] text-olive">{meta}</p>}
+</article>

@@ -1,0 +1,72 @@
+---
+interface Props {
+  eyebrow: string;
+  names: string;
+  date: string;
+  location: string;
+  intro: string;
+  primaryCta: string;
+  secondaryCta: string;
+  asideTemporaryLabel: string;
+  asideTemporaryText: string;
+  asideGuestLabel: string;
+  asideGuestText: string;
+}
+
+const {
+  eyebrow,
+  names,
+  date,
+  location,
+  intro,
+  primaryCta,
+  secondaryCta,
+  asideTemporaryLabel,
+  asideTemporaryText,
+  asideGuestLabel,
+  asideGuestText
+} = Astro.props;
+---
+
+<section class="relative isolate px-4 pb-14 pt-12 sm:px-6 sm:pb-20 sm:pt-16">
+  <div class="mx-auto max-w-6xl">
+    <div class="glass-card overflow-hidden rounded-[2rem] border border-white/60 bg-hero-glow px-6 py-10 sm:px-10 sm:py-14 lg:px-14 lg:py-20">
+      <div class="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
+        <div class="max-w-3xl">
+          <p class="mb-4 text-sm font-semibold uppercase tracking-[0.32em] text-olive">{eyebrow}</p>
+          <h1 class="font-display text-6xl leading-[0.9] text-ink sm:text-7xl lg:text-8xl">{names}</h1>
+          <div class="mt-6 flex flex-wrap items-center gap-3 text-sm text-ink/80 sm:text-base">
+            <span class="rounded-full bg-white/70 px-4 py-2">{date}</span>
+            <span class="rounded-full bg-white/70 px-4 py-2">{location}</span>
+          </div>
+          <p class="mt-6 max-w-2xl text-base leading-8 text-ink/78 sm:text-lg">{intro}</p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a
+              href="#rsvp"
+              class="inline-flex items-center justify-center rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5"
+            >
+              {primaryCta}
+            </a>
+            <a
+              href="#details"
+              class="inline-flex items-center justify-center rounded-full border border-ink/10 bg-white/60 px-6 py-3 text-sm font-semibold text-ink transition hover:-translate-y-0.5 hover:bg-white/80"
+            >
+              {secondaryCta}
+            </a>
+          </div>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
+          <div class="rounded-[1.5rem] border border-white/60 bg-white/60 p-5">
+            <p class="text-sm uppercase tracking-[0.24em] text-olive">{asideTemporaryLabel}</p>
+            <p class="mt-3 font-display text-3xl text-ink">{asideTemporaryText}</p>
+          </div>
+          <div class="rounded-[1.5rem] border border-white/60 bg-white/80 p-5">
+            <p class="text-sm uppercase tracking-[0.24em] text-olive">{asideGuestLabel}</p>
+            <p class="mt-3 text-sm leading-7 text-ink/75">{asideGuestText}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

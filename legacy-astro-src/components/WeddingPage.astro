@@ -1,0 +1,126 @@
+---
+import FAQAccordion from "./FAQAccordion.astro";
+import Footer from "./Footer.astro";
+import Header from "./Header.astro";
+import Hero from "./Hero.astro";
+import InfoCard from "./InfoCard.astro";
+import SectionShell from "./SectionShell.astro";
+import StickyRSVPButton from "./StickyRSVPButton.astro";
+import Timeline from "./Timeline.astro";
+import type { SiteContent } from "../utils/site";
+
+interface Props {
+  content: SiteContent;
+}
+
+const { content } = Astro.props;
+const homeLabel = "A&T";
+const languageHref = `${import.meta.env.BASE_URL}${content.languageSwitcher.otherLanguageHref}`;
+---
+
+<Header
+  nav={content.nav}
+  homeLabel={homeLabel}
+  switcher={{
+    label: content.languageSwitcher.label,
+    href: languageHref,
+    title: content.languageSwitcher.otherLanguageLabel
+  }}
+/>
+
+<main>
+  <Hero {...content.hero} />
+
+  <SectionShell id="details" title={content.details.title} intro={content.details.intro}>
+    <div class="grid gap-5 lg:grid-cols-[1fr_1fr]">
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-1">
+        {
+          content.details.cards.map((card) => (
+            <InfoCard title={card.title} description={card.description} meta={card.meta} />
+          ))
+        }
+        <a
+          href={content.details.mapHref}
+          target="_blank"
+          rel="noreferrer"
+          class="glass-card inline-flex items-center justify-center rounded-[1.5rem] p-5 text-center text-sm font-semibold text-ink transition hover:-translate-y-0.5"
+        >
+          {content.details.mapLabel}
+        </a>
+      </div>
+      <Timeline title={content.details.timelineTitle} items={content.details.timeline} />
+    </div>
+  </SectionShell>
+
+  <SectionShell id="rsvp" title={content.rsvp.title} intro={content.rsvp.intro}>
+    <div class="glass-card rounded-[1.75rem] p-4 sm:p-6">
+      <div class="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <p class="text-sm leading-7 text-ink/72">{content.rsvp.embedNotice}</p>
+        <a
+          href={content.rsvp.embedUrl}
+          target="_blank"
+          rel="noreferrer"
+          class="inline-flex items-center justify-center rounded-full bg-ink px-5 py-3 text-sm font-semibold text-white"
+        >
+          {content.rsvp.openFormLabel}
+        </a>
+      </div>
+      <div class="overflow-hidden rounded-[1.5rem] border border-ink/10 bg-white/75">
+        <iframe
+          src={content.rsvp.embedUrl}
+          title="RSVP form"
+          class="min-h-[620px] w-full"
+          loading="lazy"
+        ></iframe>
+      </div>
+      <p class="mt-4 text-xs font-semibold uppercase tracking-[0.24em] text-olive">{content.rsvp.deadlineLabel}</p>
+    </div>
+  </SectionShell>
+
+  <SectionShell id="travel" title={content.travel.title} intro={content.travel.intro}>
+    <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+      {
+        content.travel.cards.map((card) => (
+          <InfoCard title={card.title} description={card.description} meta={card.meta} />
+        ))
+      }
+    </div>
+  </SectionShell>
+
+  <SectionShell id="stay" title={content.stay.title} intro={content.stay.intro}>
+    <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+      {
+        content.stay.cards.map((card) => (
+          <InfoCard title={card.title} description={card.description} meta={card.meta} />
+        ))
+      }
+    </div>
+  </SectionShell>
+
+  <SectionShell id="guide" title={content.guide.title} intro={content.guide.intro}>
+    <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+      {
+        content.guide.cards.map((card) => (
+          <InfoCard title={card.title} description={card.description} meta={card.meta} />
+        ))
+      }
+    </div>
+  </SectionShell>
+
+  <SectionShell id="activities" title={content.activities.title} intro={content.activities.intro}>
+    <div class="grid gap-5 md:grid-cols-3">
+      {
+        content.activities.items.map((card) => (
+          <InfoCard title={card.title} description={card.description} meta={card.meta} />
+        ))
+      }
+    </div>
+  </SectionShell>
+
+  <SectionShell id="faq" title={content.faq.title} intro={content.faq.intro}>
+    <FAQAccordion items={content.faq.items} />
+  </SectionShell>
+</main>
+
+<Footer text={content.footer} />
+<StickyRSVPButton label={content.stickyCta} />

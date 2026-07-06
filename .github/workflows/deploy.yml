@@ -26,8 +26,10 @@ jobs:
         with:
           node-version: 22
           cache: "npm"
+          cache-dependency-path: june2026/package-lock.json
 
       - name: Install dependencies
+        working-directory: june2026
         run: npm ci
 
       - name: Setup Pages
@@ -37,20 +39,25 @@ jobs:
       - name: Restore Next.js cache
         uses: actions/cache@v4
         with:
-          path: .next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('package-lock.json') }}-${{ hashFiles('app/**/*.[jt]s', 'app/**/*.[jt]sx', 'components/**/*.[jt]s', 'components/**/*.[jt]sx', 'content/**/*.[jt]s', 'content/**/*.[jt]sx') }}
+          path: june2026/.next/cache
+          key: ${{ runner.os }}-nextjs-june2026-${{ hashFiles('june2026/package-lock.json') }}-${{ hashFiles('june2026/app/**/*.[jt]s', 'june2026/app/**/*.[jt]sx', 'june2026/components/**/*.[jt]s', 'june2026/components/**/*.[jt]sx', 'june2026/content/**/*.[jt]s', 'june2026/content/**/*.[jt]sx') }}
           restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('package-lock.json') }}-
+            ${{ runner.os }}-nextjs-june2026-${{ hashFiles('june2026/package-lock.json') }}-
 
       - name: Build with Next.js
+        working-directory: june2026
         run: npm run build
         env:
           PAGES_BASE_PATH: ${{ steps.setup_pages.outputs.base_path }}
 
+      - name: Remove custom domain file unless explicitly configured
+        if: ${{ vars.CUSTOM_DOMAIN == '' }}
+        run: rm -f june2026/out/CNAME
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./june2026/out
 
   deploy:
     environment:

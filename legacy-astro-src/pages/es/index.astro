@@ -1,0 +1,9 @@
+---
+import WeddingPage from "../../components/WeddingPage.astro";
+import MainLayout from "../../layouts/MainLayout.astro";
+import { es } from "../../content/es";
+---
+
+<MainLayout lang={es.lang} title={es.meta.title} description={es.meta.description}>
+  <WeddingPage content={es} />
+</MainLayout>
