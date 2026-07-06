@@ -3,7 +3,7 @@ import { PageIntro } from "@/components/page-intro";
 import { PageSection } from "@/components/page-section";
 import { SiteShell } from "@/components/site-shell";
 import { TbcBadge } from "@/components/tbc-badge";
-import { rsvp } from "@/content/site-data";
+import { faq, footer, rsvp } from "@/content/site-data";
 
 export const metadata: Metadata = {
   title: "RSVP",
@@ -21,6 +21,15 @@ export default function RsvpPage() {
             <div className="mt-5">
               <TbcBadge>{rsvp.deadline}</TbcBadge>
             </div>
+          </PageSection>
+          <PageSection title={faq.title}>
+            <p className="text-base leading-8 text-[var(--muted)]">{faq.intro}</p>
+            <a
+              href={`mailto:${footer.contact}`}
+              className="mt-4 inline-flex rounded-full border border-[var(--line)] px-4 py-2 text-sm font-semibold text-[var(--accent)] transition hover:bg-[var(--accent-soft)]"
+            >
+              {footer.contact}
+            </a>
           </PageSection>
           <section className="overflow-hidden rounded-lg border border-[var(--line)] bg-[var(--surface-strong)]">
             <iframe
