@@ -1,0 +1,69 @@
+Some changes to the june2026 folder version- please implement
+
+ 
+
+The Weekend
+
+ 
+
+-Thursday 18 and Friday 19
+-- cHANGE IT FOR Thursday 18 OR Friday 19
+- Drop the TBC bubbles next to the dates
+- Likely an asado and a slow afternoon
+-- Add a slow evening in the countryside close to BA
+- If you're around from Thursday to Sunday, that would be lovely. 
+-- Drop this sentence
+- The ceremony and the party. 
+-- Drop this
+
+ 
+
+_______
+Buenos Aires
+
+ 
+
+We're biased, but Buenos Aires is one of the best cities in the world and we want you to see it properly. Give it five days at least. It's a big city, and it's really many different cities in one, with its bohemian, upscale, trendy and green neighbourhoods, and the architecture changes as you move between them.
+
+ 
+
+- In the second sentence, create some in the neighborhoods, "walk from bohemian to upscale, from trendy to classical, from green to concrete-jungle neighborhoods, with very different vibes and architecture" or something like that
+
+ 
+
+ 
+
+--
+It isn't really a checklist kind of city. There are a few classic spots worth seeing, mostly around the barrios of La Boca, San Telmo, Recoleta, Puerto Madero and Palermo, but the real point of Buenos Aires is just to enjoy normal city life. Green spaces, cafés, long walks, art, and staying out much later than you planned. There's also plenty going on, museums, theatres, tango, a big nightlife and of course football (if you coincide with a game you MUST go! And if San Lorenzo (best team) plays we can get tickets).
+
+ 
+
+And then add two sentences... one saying that the food in Buenos Aires is spectacular (and not only meat!). And one saying that we have tonssss of recommendations for things to do and places to go here, so just trust us on this!
+
+ 
+
+--
+So then anow drop the football block, not needed anymore
+
+ 
+
+____________
+Travel in Argentina
+
+ 
+
+- Most of these places need a domestic flight, but they're short, around two hours to most of them, and often cheap, roughly 50 to 150 euros return if you book ahead. 
+-- Drop the nuances, like say they are around 2 hours and depending on the destination 50 to 150 return If you book in advance
+
+ 
+
+- Flights and booking and A few useful things are repetitive... please align here to avoid repetition. Choose where the info is better in your opinion and execute
+
+ 
+
+- Sort the destinations like this (and maybe mention that you sort from North to South): Iguazu,  North, Mendoza, Bariloche, Calafate, Ushuahia
+
+ 
+
+__
+the /images  folder has the images I want to add to each of the trips in Argentina (/ travel in Argentina) Note that each folder in there has a destination, you should match them with the destinations in the website and add the pictures. The title of each destination should be the footnote of the image (needs to be good looking for mobile please!)
