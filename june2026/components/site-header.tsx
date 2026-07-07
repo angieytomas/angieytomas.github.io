@@ -15,15 +15,19 @@ export function SiteHeader() {
         </Link>
         <button
           type="button"
-          className="inline-flex h-11 w-11 flex-col items-center justify-center gap-1 rounded-full border border-[var(--line)] text-[var(--ink)] md:hidden"
+          className="inline-flex h-11 items-center gap-2 rounded-full border border-[var(--line)] px-4 text-sm font-semibold uppercase tracking-[0.14em] text-[var(--ink)] md:hidden"
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label="Toggle menu"
           onClick={() => setOpen((value) => !value)}
         >
-          <span className={`h-px w-5 bg-current transition ${open ? "translate-y-1 rotate-45" : ""}`} />
-          <span className={`h-px w-5 bg-current transition ${open ? "opacity-0" : ""}`} />
-          <span className={`h-px w-5 bg-current transition ${open ? "-translate-y-1 -rotate-45" : ""}`} />
+          <span>Menu</span>
+          <span
+            aria-hidden="true"
+            className={`text-base leading-none transition-transform ${open ? "rotate-180" : ""}`}
+          >
+            ↓
+          </span>
         </button>
         <div className="hidden items-center gap-5 text-xs uppercase tracking-[0.14em] text-[var(--muted)] md:flex">
           {navItems.slice(1).map((item) => (
