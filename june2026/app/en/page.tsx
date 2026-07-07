@@ -31,7 +31,7 @@ export default function HomePage() {
         </section>
 
         <div className="grid gap-7 py-8 sm:py-10">
-          <PageSection eyebrow="Hello!!!!!!!!!">
+          <PageSection>
             <div className="grid gap-4 md:grid-cols-[0.95fr_1.05fr] md:items-start">
               <div className="overflow-hidden rounded-lg border border-[var(--line)] bg-[var(--surface)]">
                 <Image

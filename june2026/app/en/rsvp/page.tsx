@@ -3,7 +3,7 @@ import { PageIntro } from "@/components/page-intro";
 import { PageNavigation } from "@/components/page-navigation";
 import { PageSection } from "@/components/page-section";
 import { SiteShell } from "@/components/site-shell";
-import { faq, rsvp } from "@/content/site-data";
+import { rsvp } from "@/content/site-data";
 
 export const metadata: Metadata = {
   title: "RSVP",
@@ -27,9 +27,6 @@ export default function RsvpPage() {
               loading="lazy"
             />
           </section>
-          <PageSection title={faq.title}>
-            <p className="text-base leading-8 text-[var(--muted)]">{faq.intro}</p>
-          </PageSection>
         </div>
         <PageNavigation currentHref="/en/rsvp/" />
       </main>

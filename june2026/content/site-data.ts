@@ -48,26 +48,26 @@ export type FaqItem = {
 export const navItems: NavItem[] = [
   { label: "Home", href: "/en/" },
   { label: "The Weekend", href: "/en/the-weekend/" },
+  { label: "Getting to Buenos Aires", href: "/en/getting-to-argentina/" },
   { label: "Buenos Aires", href: "/en/buenos-aires/" },
   { label: "Travel in Argentina", href: "/en/travel-in-argentina/" },
-  { label: "Getting to Buenos Aires", href: "/en/getting-to-argentina/" },
   { label: "RSVP", href: "/en/rsvp/" }
 ];
 
 export const siteMeta = {
-  title: "Angie & Tomas — 20 March 2027, Buenos Aires",
+  title: "Angie & Tomas — 20th March 2027, Buenos Aires",
   description:
-    "Angie and Tomas are getting married in Buenos Aires on 20 March 2027. Everything you need to plan your trip.",
+    "Angie and Tomas are getting married in Buenos Aires on 20th March 2027. Everything you need to plan your trip.",
   image: "/images/placeholders/hero-placeholder.svg"
 };
 
 export const home = {
   names: "Angie & Tomas",
   kicker: "",
-  dateLine: "Saturday 20 March 2027 · Invernadero · Buenos Aires, Argentina",
+  dateLine: "Saturday 20th March 2027 · Invernadero · Buenos Aires, Argentina",
   countdownTarget: "2027-03-20T17:00:00-03:00",
   welcome:
-    "We're getting married in Buenos Aires on 20 March 2027 and we'd love for you to be there.\n\nWe vibecoded this website with some information, and we will upload it with all the information you'll need and more!",
+    "We're getting married in Buenos Aires on 20th March 2027 and we'd love for you to be there.",
   buttons: [
     { label: "RSVP", href: "/en/rsvp/" },
     { label: "Plan your trip", href: "/en/the-weekend/" }
@@ -84,9 +84,9 @@ export const weekend = {
       body: "For those already in Buenos Aires, we will have meet-up and say-hi drinks.\n\nMore details to come."
     },
     {
-      day: "Saturday 20 March 2027",
+      day: "Saturday 20th March 2027",
       title: "The Wedding",
-      body: "This is the one. The wedding will be at [Invernadero](https://www.google.de/maps/place/INVERNADERO/@-34.5849576,-58.400764,17z/data=!4m6!3m5!1s0x95bccb6151de0ef9:0x960b059bb4ca475d!8m2!3d-34.5849576!4d-58.3981891!16s%2Fg%2F11fngv5dnr?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D). Time TBC, but probably 7 PM - 2 AM."
+      body: "This is the one. The wedding will be at [Invernadero](https://www.google.de/maps/place/INVERNADERO/@-34.5849576,-58.400764,17z/data=!4m6!3m5!1s0x95bccb6151de0ef9:0x960b059bb4ca475d!8m2!3d-34.5849576!4d-58.3981891!16s%2Fg%2F11fngv5dnr?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D). Time TBC, but probably 7 PM - 2 AM.\n\nDress to celebrate: Cocktail attire."
     },
     {
       day: "Sunday 21 March 2027",
@@ -328,11 +328,11 @@ export const rsvp = {
   title: "RSVP",
   intro: "We'd love to know if you can make it. Fill in the form below, it only takes a minute.",
   note:
-    "We'll ask later on about any dietary needs or anything else we should know. We'd really appreciate it if you could let us know once you know whether you'll make it so we can finish the planning. If your plans aren't final yet, you can mention that in the RSVP form too.",
+    "We'd really appreciate it if you could let us know once you know whether you'll make it so we can finish the planning, ideally before end-of-September. If your plans aren't final yet, you can mention that in the RSVP form too :)",
   url: rsvpUrl
 };
 
 export const footer = {
-  line: "Angie & Tomas · 20 March 2027 · Buenos Aires",
+  line: "Angie & Tomas · 20th March 2027 · Buenos Aires",
   contact: ""
 };
