@@ -200,6 +200,7 @@ li {
   letter-spacing: 0.04em;
   line-height: 1.75;
   max-width: 30rem;
+  transform: translateY(-20svh);
 }
 
 [aria-label="Countdown to the wedding"] {
