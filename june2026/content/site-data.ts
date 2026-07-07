@@ -133,7 +133,14 @@ export const argentinaTravel = {
       days: "2 days",
       airport: "fly into IGR",
       flightTime: "about 1h45 from BA",
-      images: [{ src: "/images/iguazu-falls/hero-placeholder.svg", alt: "Placeholder image for Iguazú Falls" }],
+      images: [
+        { src: "/images/iguazu-falls/boat-ride-by-the-falls.jpg", alt: "Boat ride by the falls" },
+        { src: "/images/iguazu-falls/panoramic-view-from-brazilian-side.jpg", alt: "Panoramic view (Brazil)" },
+        { src: "/images/iguazu-falls/in-the-argentinian-side-you-get-there.jpg", alt: "Argentinian side" },
+        { src: "/images/iguazu-falls/151-billion-liters-flowing-per-day.jpg", alt: "The falls" },
+        { src: "/images/iguazu-falls/these-sneaky-coaties-are-everywhere.jpg", alt: "Coatis" },
+        { src: "/images/iguazu-falls/toucans!.jpg", alt: "Toucans" }
+      ],
       body:
         "[One of the seven natural wonders of the world](https://www.argentina.travel/en/news/iguazu-waterfalls-what-to-do-and-more-information), and it deserves it. Hundreds of waterfalls in the middle of the jungle, on the border with Brazil. Standing right next to these huge, powerful giants gives you a feeling that's hard to explain. You can even take a boat tour that gets you right to the bottom of them, prepare to get soaked. This is one of those places where a photo really doesn't do it justice, they are massive. In terms of logistics, the falls sit in a national park shared with Brazil, and you should really see both sides, as each gives you a different perspective. The Brazilian side is more about the wide panoramic views, and the Argentinian side puts you right next to those monstrous falls. Each side takes about a day, so with 2 days here you're fine."
     },
@@ -142,7 +149,19 @@ export const argentinaTravel = {
       days: "4 to 5 days",
       airport: "fly into SLA or JUJ",
       flightTime: "about 2h15 from BA",
-      images: [{ src: "/images/salta-north/hero-placeholder.svg", alt: "Placeholder image for Salta" }],
+      images: [
+        { src: "/images/salta-north/valle-encantado,-salta.jpg", alt: "Valle Encantado" },
+        { src: "/images/salta-north/salinas-grandes.jpg", alt: "Salinas Grandes" },
+        { src: "/images/salta-north/el-hornocal.jpg", alt: "El Hornocal" },
+        { src: "/images/salta-north/train-to-the-clouds.jpg", alt: "Train to the Clouds" },
+        { src: "/images/salta-north/purmamarca.jpg", alt: "Purmamarca" },
+        { src: "/images/salta-north/cachi.jpg", alt: "Cachi" },
+        { src: "/images/salta-north/devil's-throat-in-salta.jpg", alt: "Devil's Throat" },
+        { src: "/images/salta-north/parque-nacional-los-cardones.jpg", alt: "Los Cardones" },
+        { src: "/images/salta-north/tilcara.jpg", alt: "Tilcara" },
+        { src: "/images/salta-north/quebrada-de-san-lorenzo.jpg", alt: "Quebrada de San Lorenzo" },
+        { src: "/images/salta-north/vineyards-in-cafayate.jpg", alt: "Vineyards in Cafayate" }
+      ],
       body:
         "The northwest feels like [another country](https://www.argentina.travel/en/norte). As soon as you arrive you notice the colourful crafts and the strong presence of indigenous and traditional culture, in the clothing, the dances and the food. The landscape is high-altitude Andean and dry, all big skies, desert and painted mountains. You can fly into Salta or Jujuy, or fly into one and out from the other, which works really well. The trip splits nicely into two parts. The first is around Salta, using the capital as a base, with [Cachi](https://www.argentina.travel/en/activities/cachi) as a lovely day trip and [Cafayate](https://www.argentina.travel/en/activities/cafayate) for high-altitude wines and the Devil's Throat canyon, though that one needs an overnight. Another great day out from Salta is the [Tren a las Nubes](https://trenalasnubes.com.ar/inicio-en/), which you can do as a tour that takes you by bus up to San Antonio de los Cobres, with some really nice stops and views along the way. The second part is in Jujuy, where you can skip the city and base yourself in one of the villages of the Quebrada de Humahuaca. The two are about two hours apart by car. Give the villages at least two full days. Purmamarca, Tilcara and Humahuaca are tiny, close together and full of colour. From there, a few excursions are a must, the [Salinas Grandes](https://www.argentina.travel/en/news/certamente-sao-mais-de-sete-porque-os-vislumbres-magicos-que-esse-imperdivel-argentino-alcanca-nao-tem-limites-a-cor-branca-cobra-protagonismo-e-a-experiencia-so-fica-melhor-quando-se-caminha-por-um-cobertor-sem-fim-no-noroeste-estas-sao-as-razoes-pelas-quais-as-salinas-grandes-estao-no-top-7-das-maravilhas-naturais-do-pais), a huge white salt flat that goes all the way to the horizon, the Hornocal, the many-coloured mountain above Humahuaca, and the [Quebrada de las Señoritas](https://thetravellingtriplet.com/2019/05/01/walking-the-quebrada-de-las-senoritas/), a half-day hike with stunning views."
     },
@@ -151,7 +170,13 @@ export const argentinaTravel = {
       days: "3 to 4 days",
       airport: "fly into MDZ",
       flightTime: "about 1h45 from BA",
-      images: [{ src: "/images/mendoza/hero-placeholder.svg", alt: "Placeholder image for Mendoza" }],
+      images: [
+        { src: "/images/mendoza/the-mount-aconcagua-is-the-tallest-peak-outside-of-the-himalayas.jpg", alt: "Aconcagua" },
+        { src: "/images/mendoza/some-wineries-(bodegas)-are-great-pieces-of-architecture-too.jpg", alt: "Wineries" },
+        { src: "/images/mendoza/las-palapas-in-potrerillos.jpg", alt: "Las Palapas" },
+        { src: "/images/mendoza/white-water-rafting-in-potrerillos.jpg", alt: "White water rafting" },
+        { src: "/images/mendoza/there-are-some-amazing-mountain-restaurants.jpg", alt: "Mountain restaurants" }
+      ],
       body:
         "[The land of sun and good wine](https://www.argentina.travel/en/cuyo/mendoza), and that tells you all you need to know. At the feet of the Andes, where you can see the Aconcagua, the tallest mountain outside the Himalayas. The plan is easy and very rewarding, lunch at a mountain restaurant, then a vineyard, and repeat. The wineries are [beautiful pieces of architecture](https://vinomanos.com/2021/12/arquitectura-de-bodegas/) on their own. But it's not just wine. Head to Potrerillos for a day or two of the fun, adventurous stuff, like white-water rafting straight off the Andes, really good fun, and some lovely hikes in those giant mountains. And if you fancy a drink watching the sunset with some music, check out Las Palapas in Potrerillos."
     },
@@ -160,7 +185,13 @@ export const argentinaTravel = {
       days: "4 to 7 days",
       airport: "fly into BRC",
       flightTime: "about 2h20 from BA",
-      images: [{ src: "/images/bariloche/hero-placeholder.svg", alt: "Placeholder image for Bariloche" }],
+      images: [
+        { src: "/images/bariloche/part-of-the-7-lakes-route.jpg", alt: "Seven Lakes route" },
+        { src: "/images/bariloche/kayaking-between-the-mountains.jpg", alt: "Kayaking" },
+        { src: "/images/bariloche/cerveceria-patagonia-has-a-very-nice-bar-with-a-view-to-the-lake.jpg", alt: "Brewery with view" },
+        { src: "/images/bariloche/cerro-lopez-hut.jpg", alt: "Cerro López" },
+        { src: "/images/bariloche/you-can-hike-to-reach-some-nice-andine-huts.jpg", alt: "Huts hike" }
+      ],
       body:
         "The alpine side of Patagonia. Mountains, big blue lakes, forests and really good chocolate. [Bariloche](https://www.argentina.travel/en/news/tourism-in-bariloche-in-march-what-to-do-and-the-best-places-to-visit) is the base, and the [Seven Lakes drive](https://www.argentina.travel/en/news/route-of-the-7-lakes-a-journey-between-villa-la-angostura-san-martin-de-los-andes-and-bariloche) up to [Villa La Angostura](https://www.argentina.travel/en/activities/villa-la-angostura) is the classic outing, with [Parque Nacional Los Arrayanes](https://www.argentina.travel/en/activities/los-arrayanes-national-park) along the way. There are also gorgeous day hikes like Cerro López or the Refugio Frey, or you can kayak on the Nahuel Huapi lake. The food here is serious and quite different from the rest of the country, lots of Patagonian lamb, river trout, fondue and chocolate. By early autumn the days are cool and clear and the leaves are turning, probably the prettiest time to see it."
     },
@@ -169,7 +200,13 @@ export const argentinaTravel = {
       days: "5 to 6 days",
       airport: "fly into FTE",
       flightTime: "about 3h15 from BA",
-      images: [{ src: "/images/el-calafate/hero-placeholder.svg", alt: "Placeholder image for El Calafate" }],
+      images: [
+        { src: "/images/el-calafate/the-perito-moreno-glacier-has-the-size-of-buenos-aires.jpg", alt: "Perito Moreno" },
+        { src: "/images/el-calafate/laguna-de-los-tres-trek.jpg", alt: "Laguna de los Tres" },
+        { src: "/images/el-calafate/el-chalten---charming-little-village-as-base.jpg", alt: "El Chaltén" },
+        { src: "/images/el-calafate/the-postcard-view.jpg", alt: "Postcard view" },
+        { src: "/images/el-calafate/torres-del-paine.jpg", alt: "Torres del Paine" }
+      ],
       body:
         "This second Patagonia option is more for nature and adventure than for town life. [El Calafate](https://www.argentina.travel/en/news/a-complete-guide-to-el-calafate) itself doesn't offer much, but it's the gate to two wonders. One is the Perito Moreno glacier, part of the [Glaciers National Park](https://www.argentina.travel/en/activities/los-glaciares-national-park) and the largest glacier in the Atlantic basin, and you can even hike on it. The other is [El Chaltén](https://www.argentina.travel/en/activities/el-chalten), a small village with a rustic vibe that's the trekking capital of the country, with the famous Fitz Roy right behind it. It's way south, so it can get cold even in March, around 7 to 13 degrees. You can also cross into Chile to see Torres del Paine, but that takes a couple of days, so with only 7 it gets a bit tight, still doable. The weather down here can be unpredictable, so keep your plans loose."
     },
@@ -178,7 +215,12 @@ export const argentinaTravel = {
       days: "3 to 4 days",
       airport: "fly into USH",
       flightTime: "about 3h30 from BA",
-      images: [{ src: "/images/ushuaia/hero-placeholder.svg", alt: "Placeholder image for Ushuaia" }],
+      images: [
+        { src: "/images/ushuaia/canal-de-beagle.jpg", alt: "Canal de Beagle" },
+        { src: "/images/ushuaia/there-are-some-nice-hikes-too.jpg", alt: "Hikes" },
+        { src: "/images/ushuaia/you-can-hang-out-with-these-qts.jpg", alt: "Wildlife" },
+        { src: "/images/ushuaia/ushuahia.avif", alt: "Ushuaia" }
+      ],
       body:
         "The southernmost city in the world, [the edge of Tierra del Fuego](https://www.argentina.travel/en/pr/tierra-del-fuego). Antarctic wildlife and very dramatic scenery. You can reach it from El Calafate, but that's about a day of travelling."
     }
