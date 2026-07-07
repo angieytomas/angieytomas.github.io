@@ -64,7 +64,7 @@ export const siteMeta = {
 export const home = {
   names: "Angie & Tomas",
   kicker: "",
-  dateLine: "Saturday 20th March 2027 · Invernadero · Buenos Aires, Argentina",
+  dateLine: "Saturday 20th March 2027 · Buenos Aires, Argentina",
   countdownTarget: "2027-03-20T17:00:00-03:00",
   welcome:
     "We're getting married in Buenos Aires on 20th March 2027 and we'd love for you to be there.",
@@ -91,7 +91,7 @@ export const weekend = {
     {
       day: "Sunday 21 March 2027",
       title: "A relaxed get-together before everyone heads off",
-      body: "More details to come."
+      body: "We're thinking of something easy, like an asado in the countryside outside Buenos Aires.\n\nMore details to come."
     }
   ] as WeekendDay[],
   footer: ""
