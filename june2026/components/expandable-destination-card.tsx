@@ -48,18 +48,20 @@ export function ExpandableDestinationCard({
         <div className="overflow-hidden">
           <div className="border-t border-[var(--line)] px-5 pb-6 pt-5 sm:px-6">
             {images && images.length > 0 ? (
-              <div className="mb-5 grid gap-3 sm:grid-cols-2">
-                {images.map((image) => (
-                  <div key={image.src} className="relative aspect-[4/3] overflow-hidden rounded-lg">
-                    <Image
-                      src={image.src}
-                      alt={image.alt}
-                      fill
-                      sizes="(max-width: 760px) 100vw, 360px"
-                      className="object-cover"
-                    />
-                  </div>
-                ))}
+              <div className="mb-5 overflow-x-auto py-2">
+                <div className="flex min-w-max gap-3 snap-x snap-mandatory scroll-smooth">
+                  {images.map((image) => (
+                    <div key={image.src} className="relative aspect-[4/3] min-w-[260px] flex-shrink-0 snap-center overflow-hidden rounded-lg">
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        fill
+                        sizes="(max-width: 760px) 100vw, 360px"
+                        className="object-cover"
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
             ) : null}
 

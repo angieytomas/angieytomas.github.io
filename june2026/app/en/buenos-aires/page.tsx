@@ -18,18 +18,20 @@ export default function BuenosAiresPage() {
         <PageIntro title={buenosAires.title} intro={buenosAires.intro} />
         <div className="grid gap-5">
           {buenosAires.images?.length ? (
-            <div className="grid gap-3 sm:grid-cols-2">
-              {buenosAires.images.map((image) => (
-                <div key={image.src} className="relative aspect-[4/3] overflow-hidden rounded-lg">
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 760px) 100vw, 720px"
-                  />
-                </div>
-              ))}
+            <div className="overflow-x-auto pb-3">
+              <div className="flex min-w-max gap-3 snap-x snap-mandatory scroll-smooth">
+                {buenosAires.images.map((image) => (
+                  <div key={image.src} className="relative aspect-[4/3] min-w-[300px] flex-shrink-0 snap-center overflow-hidden rounded-lg">
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 760px) 100vw, 720px"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           ) : null}
           <PageSection title="The city">

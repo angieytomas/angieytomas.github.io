@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-const linkPattern = /\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g;
+const linkPattern = /\[([^\]]+)\]\(([^)]+)\)/g;
 
 export function MarkdownText({ text }: { text: string }) {
   const parts: ReactNode[] = [];

@@ -80,12 +80,12 @@ export const home = {
 export const weekend = {
   title: "The Weekend",
   intro:
-    "Saturday is the big day, but if your plans allow it would be really nice to have you in Buenos Aires from Thursday to Sunday. We're planning a couple of relaxed get-togethers around the wedding, likely on the Thursday and the Sunday, so there's a bit more time together. We'll add the details here as we sort them out.",
+    "Saturday is the big day, but if your plans allow it would be really nice to have you in Buenos Aires from Thursday to Sunday. We're planning a couple of relaxed get-togethers around the wedding, likely on the Thursday and the Sunday, so there's a bit more time together. We might do the ceremony on one of those days too, so there is also a chance to celebrate with drinks afterwards. We'll add the details here as we sort them out.",
   days: [
     {
       day: "Thursday 18 or Friday 19",
       title: "Come into town and settle in",
-      body: "We'll probably do something low-key to say hello."
+      body: "Kick things off with something easy and relaxed once you're in town."
     },
     {
       day: "Saturday 20",
@@ -106,15 +106,16 @@ export const buenosAires = {
   intro:
     "We're biased, but Buenos Aires is one of the best cities in the world and we want you to see it properly. Give it five days at least. Walk from bohemian to upscale, from trendy to classical, from green to concrete-jungle neighbourhoods, with very different vibes and architecture.",
   description:
-    "It isn't really a checklist kind of city. There are a few classic spots worth seeing, mostly around the barrios of La Boca, San Telmo, Recoleta, Puerto Madero and Palermo, but the real point of Buenos Aires is just to enjoy normal city life. Green spaces, cafés, long walks, art, and staying out much later than you planned. There's also plenty going on, museums, theatres and tango. The food in Buenos Aires is spectacular and it's not only meat. We have tons of recommendations for places to eat and things to do, so just trust us on this!",
+    "It isn't really a checklist kind of city. There are a few classic spots worth seeing, mostly around the barrios of La Boca, San Telmo, Recoleta, Puerto Madero and Palermo, but the real point of Buenos Aires is just to enjoy normal city life. Green spaces, cafés, long walks, art, and staying out much later than you planned. There's also plenty going on, museums, theatres, tango, and football. If San Lorenzo happen to be playing while you're here, it's a great, very local way to feel the city — let us know and we can help with tickets. The food in Buenos Aires is spectacular and it's not only meat. We have tons of recommendations for places to eat and things to do, so just trust us on this!",
   stay:
     "Airbnb is the easy option and pretty cheap here, you'll find good places for not much. For location, Palermo or Recoleta are probably your best bet. They're central and close to most of what you'll want to see. If you want somewhere quieter and more residential, have a look at Colegiales, Belgrano or Núñez. It's a big city, but taxis and Uber are cheap and everywhere, so being a bit further out really doesn't matter.",
   areas: ["Palermo", "Recoleta", "Colegiales", "Belgrano", "Núñez"],
   images: [
-    {
-      src: "/images/placeholders/hero-placeholder.svg",
-      alt: "Placeholder image for Buenos Aires"
-    }
+    { src: "/images/buenos-aires/palermo.jpg", alt: "Palermo street scene" },
+    { src: "/images/buenos-aires/caminito.jpg", alt: "Caminito in La Boca" },
+    { src: "/images/buenos-aires/puerto-madero.jpg", alt: "Puerto Madero waterfront" },
+    { src: "/images/buenos-aires/tango.jpg", alt: "Tango in Buenos Aires" },
+    { src: "/images/buenos-aires/ateneo.jpg", alt: "Ateneo Grand Splendid" }
   ]
 };
 
@@ -254,16 +255,16 @@ export const gettingToArgentina = {
     "Most of you are flying from Europe, so here are a few tips to make finding flights easier and cheaper.",
   items: [
     {
-      title: "How to search",
+      title: "Booking tips",
       body:
-        "Use Google Flights to search, not necessarily to book. Two things make it worth it. You can put in several departure airports at once, which helps if you're flexible about where you fly from, and the date grid shows you the cheapest days across a whole range of dates. The little image below shows the kind of view you can use to compare different day combinations. Once you've found a good flight, book it directly on the airline's own website rather than through Google or some third party. It's usually the same price and a lot less hassle if anything changes.\n\nFor domestic flights inside Argentina, see the tips on the Travel in Argentina page, including a metasearcher to compare prices and a note on paying in pesos for a better rate.",
+        "We usually do it this way. Start on Google Flights to compare departure airports and date combinations, then book the ticket on the airline's own website if you can. The **date grid** is especially useful and very recommended if you have some flexibility in days!! [See example image](/images/travel-to-argentina/google-flights-dates-grid.png). Once you've found a good flight, book it directly on the airline's own website rather than through Google or some third party. It's usually the same price and a lot less hassle if anything changes.\n\nWe recommend [Find Cheap Flights Worldwide & Book Your Ticket - Google Flights](https://www.google.com/travel/flights) as a starting place.\n\nFor domestic flights inside Argentina, see the tips on the Travel in Argentina page, including a metasearcher to compare prices and a note on paying in pesos for a better rate.",
       imageButton: {
-        src: "/images/placeholders/google-flights-button.svg",
-        alt: "Placeholder image for the Google Flights date grid button"
+        src: "/images/travel-to-argentina/google-flights-dates-grid.png",
+        alt: "Google Flights date grid example"
       },
       imageModal: {
-        src: "/images/placeholders/google-flights-grid.svg",
-        alt: "Placeholder image for the Google Flights date grid"
+        src: "/images/travel-to-argentina/google-flights-dates-grid.png",
+        alt: "Google Flights date grid example"
       }
     },
     {

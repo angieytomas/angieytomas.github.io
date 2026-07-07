@@ -24,7 +24,7 @@ export default function TravelInArgentinaPage() {
             </p>
           </PageSection>
 
-          <PageSection title="A few useful things">
+          <PageSection title="A few travel ideas">
             <p className="text-base leading-8 text-[var(--muted)]">
               <MarkdownText text={argentinaTravel.practical} />
             </p>
