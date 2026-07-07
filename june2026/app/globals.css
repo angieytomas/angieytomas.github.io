@@ -63,6 +63,7 @@ iframe {
   letter-spacing: 0.045em;
   line-height: 0.95;
   font-size: 3.375rem !important;
+  transform: translateY(-20svh);
 }
 
 @media (min-width: 40rem) {

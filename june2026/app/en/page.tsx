@@ -19,7 +19,7 @@ export default function HomePage() {
             className="object-cover"
             sizes="(max-width: 760px) 100vw, 720px"
           />
-          <div className="relative z-10 flex min-h-[calc(100svh-153px)] -translate-y-[8svh] flex-col justify-center">
+          <div className="relative z-10 flex min-h-[calc(100svh-153px)] flex-col justify-end">
             {home.kicker ? <p className="text-sm uppercase tracking-[0.22em]">{home.kicker}</p> : null}
             <h1 className="hero-font text-7xl leading-none sm:text-9xl">{home.names}</h1>
             <p className="mt-5 max-w-sm text-lg font-bold leading-8 text-[#fff4e5]">{home.dateLine}</p>
