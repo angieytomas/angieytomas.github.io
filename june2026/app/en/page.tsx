@@ -12,8 +12,8 @@ export default function HomePage() {
       <main className="mx-auto max-w-[720px] px-5">
         <section className="reveal relative -mx-5 min-h-[calc(100svh-73px)] overflow-hidden bg-[var(--ink)] px-5 py-10 text-[var(--paper)] sm:rounded-b-lg">
           <Image
-            src="/images/buenos-aires-hero.png"
-            alt="A warm editorial view of Buenos Aires"
+            src="/images/home/header.jpeg"
+            alt="Angie and Tomas"
             fill
             priority
             className="object-cover opacity-70"
@@ -35,7 +35,7 @@ export default function HomePage() {
             <div className="grid gap-4 md:grid-cols-[0.95fr_1.05fr] md:items-start">
               <div className="overflow-hidden rounded-lg border border-[var(--line)] bg-[var(--surface)]">
                 <Image
-                  src="/images/home/pic.jpg"
+                  src="/images/home/main_img.jpg"
                   alt="Angie and Tomas"
                   width={1200}
                   height={900}
