@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { PageIntro } from "@/components/page-intro";
+import { PageNavigation } from "@/components/page-navigation";
 import { PageSection } from "@/components/page-section";
 import { SiteShell } from "@/components/site-shell";
-import { TbcBadge } from "@/components/tbc-badge";
 import { faq, rsvp } from "@/content/site-data";
 
 export const metadata: Metadata = {
@@ -18,9 +18,6 @@ export default function RsvpPage() {
         <div className="grid gap-5">
           <PageSection>
             <p className="text-base leading-8 text-[var(--muted)]">{rsvp.note}</p>
-            <div className="mt-5">
-              <TbcBadge>{rsvp.deadline}</TbcBadge>
-            </div>
           </PageSection>
           <section className="overflow-hidden rounded-lg border border-[var(--line)] bg-[var(--surface-strong)]">
             <iframe
@@ -34,6 +31,7 @@ export default function RsvpPage() {
             <p className="text-base leading-8 text-[var(--muted)]">{faq.intro}</p>
           </PageSection>
         </div>
+        <PageNavigation currentHref="/en/rsvp/" />
       </main>
     </SiteShell>
   );

@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { ImageLightbox } from "@/components/image-lightbox";
 import { PageIntro } from "@/components/page-intro";
+import { PageNavigation } from "@/components/page-navigation";
 import { RichText } from "@/components/rich-text";
 import { SiteShell } from "@/components/site-shell";
 import { TextCard } from "@/components/text-card";
 import { gettingToArgentina } from "@/content/site-data";
 
 export const metadata: Metadata = {
-  title: "Getting to Argentina",
+  title: "Getting to Buenos Aires",
   description: "Flight planning notes for guests travelling to Buenos Aires."
 };
 
@@ -26,6 +27,7 @@ export default function GettingToArgentinaPage() {
             </TextCard>
           ))}
         </div>
+        <PageNavigation currentHref="/en/getting-to-argentina/" />
       </main>
     </SiteShell>
   );

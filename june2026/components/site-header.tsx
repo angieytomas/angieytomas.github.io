@@ -10,8 +10,8 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--line)] bg-[rgba(247,243,236,0.88)] backdrop-blur-xl">
       <nav className="mx-auto flex max-w-[720px] items-center justify-between px-5 py-4">
-        <Link href="/en/" className="display-font text-xl leading-none">
-          T&A
+        <Link href="/en/" className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">
+          Home
         </Link>
         <button
           type="button"

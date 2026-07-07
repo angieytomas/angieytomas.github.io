@@ -5,7 +5,7 @@ export function PageIntro({ title, intro }: { title: string; intro: string }) {
         Angie & Tomas
       </p>
       <h1 className="display-font mt-4 text-5xl leading-none sm:text-7xl">{title}</h1>
-      <p className="mt-6 text-lg leading-8 text-[var(--muted)]">{intro}</p>
+      {intro ? <p className="mt-6 text-lg leading-8 text-[var(--muted)]">{intro}</p> : null}
     </div>
   );
 }

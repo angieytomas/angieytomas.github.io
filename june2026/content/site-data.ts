@@ -50,7 +50,7 @@ export const navItems: NavItem[] = [
   { label: "The Weekend", href: "/en/the-weekend/" },
   { label: "Buenos Aires", href: "/en/buenos-aires/" },
   { label: "Travel in Argentina", href: "/en/travel-in-argentina/" },
-  { label: "Getting to Argentina", href: "/en/getting-to-argentina/" },
+  { label: "Getting to Buenos Aires", href: "/en/getting-to-argentina/" },
   { label: "RSVP", href: "/en/rsvp/" }
 ];
 
@@ -63,42 +63,38 @@ export const siteMeta = {
 
 export const home = {
   names: "Angie & Tomas",
-  kicker: "are getting married",
-  dateLine: "Saturday 20 March 2027 · Buenos Aires, Argentina",
+  kicker: "",
+  dateLine: "Saturday 20 March 2027 · Invernadero · Buenos Aires, Argentina",
   countdownTarget: "2027-03-20T17:00:00-03:00",
   welcome:
     "We're getting married in Buenos Aires in March 2027 and we'd love for you to be there.\n\nWe vibecoded this website with some information, and we will upload it with all the information you'll need and more!",
-  weekendLine:
-    "If your plans allow it would be really nice to have you there from Thursday to Sunday.",
-  locationStatus: "Venue and time coming soon",
   buttons: [
     { label: "RSVP", href: "/en/rsvp/" },
-    { label: "Plan your trip", href: "/en/buenos-aires/" }
+    { label: "Plan your trip", href: "/en/the-weekend/" }
   ]
 };
 
 export const weekend = {
   title: "The Weekend",
-  intro:
-    "Saturday is the big day, but if your plans allow it would be really nice to have you in Buenos Aires from Thursday to Sunday. We're planning a couple of relaxed get-togethers around the wedding, likely on the Thursday and the Sunday, so there's a bit more time together. We might do the ceremony on one of those days too, so there is also a chance to celebrate with drinks afterwards. We'll add the details here as we sort them out.",
+  intro: "",
   days: [
     {
-      day: "Thursday 18 or Friday 19",
-      title: "Come into town and settle in",
-      body: "Kick things off with something easy and relaxed once you're in town."
+      day: "Thursday 18 March 2027",
+      title: "Kick things off with something easy",
+      body: "For those already in Buenos Aires, we will have meet-up and say-hi drinks.\n\nMore details to come."
     },
     {
-      day: "Saturday 20",
+      day: "Saturday 20 March 2027",
       title: "The Wedding",
-      body: "This is the one. We'll share the venue shortly, and the party will probably run from around 6 or 7pm until 2am."
+      body: "This is the one. The wedding will be at [Invernadero](https://www.google.de/maps/place/INVERNADERO/@-34.5849576,-58.400764,17z/data=!4m6!3m5!1s0x95bccb6151de0ef9:0x960b059bb4ca475d!8m2!3d-34.5849576!4d-58.3981891!16s%2Fg%2F11fngv5dnr?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D). Time TBC, but probably 19-02."
     },
     {
-      day: "Sunday 21",
+      day: "Sunday 21 March 2027",
       title: "A relaxed get-together before everyone heads off",
-      body: "Likely an asado and a slow evening in the countryside close to BA."
+      body: "More details to come."
     }
   ] as WeekendDay[],
-  footer: "We'll add the details here as we sort them out."
+  footer: ""
 };
 
 export const buenosAires = {
@@ -108,7 +104,7 @@ export const buenosAires = {
   description:
     "Walk from bohemian to upscale, from trendy to classical, from green to concrete-jungle neighbourhoods, with very different vibes and architecture. It isn't really a checklist kind of city. There are a few classic spots worth seeing, mostly around the barrios of La Boca, San Telmo, Recoleta, Puerto Madero and Palermo, but the real point of Buenos Aires is just to enjoy normal city life. Green spaces, cafés, long walks, art, and staying out much later than you planned. There's also plenty going on, museums, theatres, tango, and football. If there is a game going on while you are there (there probably will, in Buenos Aires there are like 20 professional teams!) we strongly recommend you to attend one! If you want to see the best team (San Lorenzo) we can sort some tickets out. The food in Buenos Aires is spectacular and it's not only meat. We have tons of recommendations for places to eat and things to do, so just trust us on this!",
   stay:
-    "Airbnb is the easy option and pretty cheap here, you'll find good places for not much. For location, Palermo or Recoleta are probably your best bet. They're central and close to most of what you'll want to see. If you want somewhere quieter and more residential, have a look at Colegiales, Belgrano or Núñez. It's a big city, but taxis and Uber are cheap and everywhere, so being a bit further out really doesn't matter.",
+    "Airbnb works pretty well here, you'll find good places for not much. We don't have hotel ideas in mind, but will add a few options here shortly. For location, Palermo or Recoleta are probably your best bet. They're central and close to most of what you'll want to see. If you want somewhere quieter and more residential, have a look at Colegiales, Belgrano or Núñez. It's a big city, but taxis and Uber are cheap and everywhere, so being a bit further out really doesn't matter. If you want our help to pick a place we're happy to think along!",
   areas: ["Palermo", "Recoleta", "Colegiales", "Belgrano", "Núñez"],
   images: [
     { src: "/images/buenos-aires/palermo.jpg", alt: "Palermo street scene" },
@@ -124,11 +120,11 @@ export const buenosAires = {
 
 export const argentinaTravel = {
   title: "Travel in Argentina",
-  intro:
-    "If you're coming all this way, it's really worth seeing more of the country. Argentina is enormous, about the same length as going from Portugal all the way to Estonia, and it has a very particular geography, with the Andes running down it like a spine. That gives you landscapes you won't find anywhere else, and they change completely from one end of the country to the other. Below are a few flagship ideas for first timers. There are plenty of others too, so if you want something different just ask and we'll happily point you somewhere.",
+  intro: "",
   booking:
     "Most of these places need a domestic flight, they are around two hours and depending on the destination 50 to 150 euros return if you book in advance. Use metasearchers like [TurismoCity](https://turismocity.com) or [Despegar](https://www.despegar.com.ar) to compare prices and dates, then book with the airline. Domestic flights often leave from Aeroparque (AEP) rather than Ezeiza (EZE).",
-  practical: "Destinations are listed roughly from north to south.",
+  practical:
+    "If you're coming all this way, it's really worth seeing more of the country and some of its unique landscapes. Below are a few ideas for first timers. There are plenty of others too, so if you want something different just ask and we'll happily point you somewhere.\n\nDestinations are listed roughly from north to south.",
   daysNote:
     "Treat the suggested days as a rough minimum, handy if time is tight and you want to fit in more than one of these, which we'd recommend if you can. If you'd rather take any of them at a slower pace, or dig deeper into one place, they all reward a few extra days.",
   destinations: [
@@ -253,9 +249,9 @@ export const argentinaTravel = {
 };
 
 export const gettingToArgentina = {
-  title: "Getting to Argentina",
+  title: "Getting to Buenos Aires",
   intro:
-    "Most of you are flying from Europe, so here are a few tips to make finding flights easier and cheaper.",
+    "Many of you are flying from abroad, so here are a few tips to make finding flights easier and cheaper.",
   items: [
     {
       title: "Booking tips",
@@ -333,7 +329,6 @@ export const rsvp = {
   intro: "We'd love to know if you can make it. Fill in the form below, it only takes a minute.",
   note:
     "We'll ask later on about any dietary needs or anything else we should know. We'd really appreciate it if you could let us know once you know whether you'll make it so we can finish the planning. If your plans aren't final yet, you can mention that in the RSVP form too.",
-  deadline: "We'll confirm a deadline soon",
   url: rsvpUrl
 };
 

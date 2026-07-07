@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Countdown } from "@/components/countdown";
+import { PageNavigation } from "@/components/page-navigation";
 import { PageSection } from "@/components/page-section";
 import { SiteShell } from "@/components/site-shell";
 import { home } from "@/content/site-data";
@@ -20,8 +21,8 @@ export default function HomePage() {
           />
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(46,42,38,0.2),rgba(46,42,38,0.78))]" />
           <div className="relative z-10 flex min-h-[calc(100svh-153px)] flex-col justify-end">
-            <p className="text-sm uppercase tracking-[0.22em]">{home.kicker}</p>
-            <h1 className="display-font mt-5 text-6xl leading-none sm:text-8xl">{home.names}</h1>
+            {home.kicker ? <p className="text-sm uppercase tracking-[0.22em]">{home.kicker}</p> : null}
+            <h1 className="display-font text-6xl leading-none sm:text-8xl">{home.names}</h1>
             <p className="mt-5 max-w-sm text-lg leading-8 text-[#fff4e5]">{home.dateLine}</p>
             <div className="mt-8 max-w-md">
               <Countdown target={home.countdownTarget} />
@@ -72,6 +73,7 @@ export default function HomePage() {
             />
           </div>
         </div>
+        <PageNavigation currentHref="/en/" />
       </main>
     </SiteShell>
   );

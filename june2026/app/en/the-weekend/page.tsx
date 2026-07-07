@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { MarkdownText } from "@/components/markdown-text";
 import { PageIntro } from "@/components/page-intro";
+import { PageNavigation } from "@/components/page-navigation";
 import { PageSection } from "@/components/page-section";
 import { SiteShell } from "@/components/site-shell";
 import { TbcBadge } from "@/components/tbc-badge";
@@ -27,15 +29,24 @@ export default function WeekendPage() {
                     {day.badge ? <TbcBadge>{day.badge}</TbcBadge> : null}
                   </div>
                   <h2 className="display-font mt-3 text-3xl leading-tight">{day.title}</h2>
-                  <p className="mt-3 text-base leading-8 text-[var(--muted)]">{day.body}</p>
+                  <div className="mt-3 space-y-4 text-base leading-8 text-[var(--muted)]">
+                    {day.body.split("\n\n").map((paragraph) => (
+                      <p key={paragraph}>
+                        <MarkdownText text={paragraph} />
+                      </p>
+                    ))}
+                  </div>
                 </article>
               ))}
             </div>
           </PageSection>
-          <PageSection>
-            <p className="text-lg leading-9">{weekend.footer}</p>
-          </PageSection>
+          {weekend.footer ? (
+            <PageSection>
+              <p className="text-lg leading-9">{weekend.footer}</p>
+            </PageSection>
+          ) : null}
         </div>
+        <PageNavigation currentHref="/en/the-weekend/" />
       </main>
     </SiteShell>
   );

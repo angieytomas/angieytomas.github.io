@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { PageIntro } from "@/components/page-intro";
+import { PageNavigation } from "@/components/page-navigation";
 import { PageSection } from "@/components/page-section";
 import { SiteShell } from "@/components/site-shell";
-import { TextCard } from "@/components/text-card";
 import { buenosAires } from "@/content/site-data";
 
 export const metadata: Metadata = {
@@ -49,6 +49,7 @@ export default function BuenosAiresPage() {
           </PageSection>
 
         </div>
+        <PageNavigation currentHref="/en/buenos-aires/" />
       </main>
     </SiteShell>
   );

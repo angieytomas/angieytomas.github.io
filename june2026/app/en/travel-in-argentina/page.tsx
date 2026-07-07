@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ExpandableDestinationCard } from "@/components/expandable-destination-card";
 import { MarkdownText } from "@/components/markdown-text";
 import { PageIntro } from "@/components/page-intro";
+import { PageNavigation } from "@/components/page-navigation";
 import { PageSection } from "@/components/page-section";
 import { SiteShell } from "@/components/site-shell";
 import { TextCard } from "@/components/text-card";
@@ -18,18 +19,22 @@ export default function TravelInArgentinaPage() {
       <main className="mx-auto max-w-[720px] px-5">
         <PageIntro title={argentinaTravel.title} intro={argentinaTravel.intro} />
         <div className="grid gap-5">
-          <PageSection title="Flights and booking">
-            <p className="text-base leading-8 text-[var(--muted)]">
-              <MarkdownText text={argentinaTravel.booking} />
+          <PageSection title="A few travel ideas">
+            <div className="space-y-5 text-base leading-8 text-[var(--muted)]">
+              {argentinaTravel.practical.split("\n\n").map((paragraph) => (
+                <p key={paragraph}>
+                  <MarkdownText text={paragraph} />
+                </p>
+              ))}
+            </div>
+            <p className="mt-5 border-l-2 border-[var(--olive)] pl-4 text-base leading-8">
+              {argentinaTravel.daysNote}
             </p>
           </PageSection>
 
-          <PageSection title="A few travel ideas">
+          <PageSection title="Flights and booking">
             <p className="text-base leading-8 text-[var(--muted)]">
-              <MarkdownText text={argentinaTravel.practical} />
-            </p>
-            <p className="mt-5 border-l-2 border-[var(--olive)] pl-4 text-base leading-8">
-              {argentinaTravel.daysNote}
+              <MarkdownText text={argentinaTravel.booking} />
             </p>
           </PageSection>
 
@@ -60,6 +65,7 @@ export default function TravelInArgentinaPage() {
             <p className="text-lg leading-9">{argentinaTravel.closing}</p>
           </PageSection>
         </div>
+        <PageNavigation currentHref="/en/travel-in-argentina/" />
       </main>
     </SiteShell>
   );
