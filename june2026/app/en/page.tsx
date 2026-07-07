@@ -12,18 +12,17 @@ export default function HomePage() {
       <main className="mx-auto max-w-[720px] px-5">
         <section className="reveal relative -mx-5 min-h-[calc(100svh-73px)] overflow-hidden bg-[var(--ink)] px-5 py-10 text-[var(--paper)] sm:rounded-b-lg">
           <Image
-            src="/images/home/header.jpeg"
+            src="/images/home/header.jpg"
             alt="Angie and Tomas"
             fill
             priority
-            className="object-cover opacity-70"
+            className="object-cover"
             sizes="(max-width: 760px) 100vw, 720px"
           />
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(46,42,38,0.2),rgba(46,42,38,0.78))]" />
-          <div className="relative z-10 flex min-h-[calc(100svh-153px)] flex-col justify-end">
+          <div className="relative z-10 flex min-h-[calc(100svh-153px)] -translate-y-[8svh] flex-col justify-center">
             {home.kicker ? <p className="text-sm uppercase tracking-[0.22em]">{home.kicker}</p> : null}
             <h1 className="hero-font text-7xl leading-none sm:text-9xl">{home.names}</h1>
-            <p className="mt-5 max-w-sm text-lg leading-8 text-[#fff4e5]">{home.dateLine}</p>
+            <p className="mt-5 max-w-sm text-lg font-bold leading-8 text-[#fff4e5]">{home.dateLine}</p>
             <div className="mt-8 max-w-md">
               <Countdown target={home.countdownTarget} />
             </div>

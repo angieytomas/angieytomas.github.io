@@ -63,7 +63,6 @@ iframe {
   letter-spacing: 0.045em;
   line-height: 0.95;
   font-size: 3.375rem !important;
-  transform: translateY(-20%);
 }
 
 @media (min-width: 40rem) {
@@ -193,14 +192,6 @@ li {
 
 [class*="decoration-[#b5532e]"] {
   text-decoration-color: var(--accent) !important;
-}
-
-[class*="object-cover"].opacity-70 {
-  opacity: 0.96 !important;
-}
-
-[class*="linear-gradient"] {
-  background: rgba(43, 42, 40, 0.1) !important;
 }
 
 .hero-font + p {
