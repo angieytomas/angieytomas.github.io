@@ -41,10 +41,10 @@ export function Countdown({ target }: { target: string }) {
     <div className="grid grid-cols-4 gap-2 sm:gap-3" aria-label="Countdown to the wedding">
       {units.map(([label, value]) => (
         <div key={label} className="border-t border-[var(--line)] pt-3 text-center">
-          <div className="display-font text-3xl leading-none text-[var(--ink)] sm:text-5xl">
+          <div className="display-font text-3xl leading-none text-[var(--paper)] sm:text-5xl">
             {String(value).padStart(2, "0")}
           </div>
-          <div className="mt-2 text-[10px] uppercase tracking-[0.16em] text-[var(--muted)] sm:text-xs">
+          <div className="mt-2 text-[10px] uppercase tracking-[0.16em] text-[#fff4e5] sm:text-xs">
             {label}
           </div>
         </div>

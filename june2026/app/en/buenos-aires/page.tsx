@@ -48,10 +48,6 @@ export default function BuenosAiresPage() {
             </div>
           </PageSection>
 
-          <PageSection title="Food & recommendations">
-            <p className="text-base leading-8 text-[var(--muted)]">The food in Buenos Aires is spectacular and it's not only meat.</p>
-            <p className="mt-4 text-base leading-8 text-[var(--muted)]">We have tons of recommendations for places to eat and things to do, so just trust us on this.</p>
-          </PageSection>
         </div>
       </main>
     </SiteShell>

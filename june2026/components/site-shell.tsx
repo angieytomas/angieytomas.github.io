@@ -15,7 +15,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
             <Link href="/en/rsvp/" className="text-[var(--accent)]">
               RSVP
             </Link>
-            <a href={`mailto:${footer.contact}`}>{footer.contact}</a>
+            {footer.contact ? <a href={`mailto:${footer.contact}`}>{footer.contact}</a> : null}
           </div>
         </div>
       </footer>

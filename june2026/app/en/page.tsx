@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Countdown } from "@/components/countdown";
 import { PageSection } from "@/components/page-section";
 import { SiteShell } from "@/components/site-shell";
-import { TbcBadge } from "@/components/tbc-badge";
 import { home } from "@/content/site-data";
 
 export default function HomePage() {
@@ -31,13 +30,24 @@ export default function HomePage() {
         </section>
 
         <div className="grid gap-7 py-8 sm:py-10">
-          <PageSection eyebrow="Welcome">
-            <p className="text-lg leading-9">{home.welcome}</p>
-            <p className="mt-5 border-l-2 border-[var(--accent)] pl-4 text-base leading-8 text-[var(--muted)]">
-              {home.weekendLine}
-            </p>
-            <div className="mt-6 flex flex-wrap items-center gap-3">
-              <TbcBadge>{home.locationStatus}</TbcBadge>
+          <PageSection eyebrow="Hello!!!!!!!!!">
+            <div className="grid gap-4 md:grid-cols-[0.95fr_1.05fr] md:items-start">
+              <div className="overflow-hidden rounded-lg border border-[var(--line)] bg-[var(--surface)]">
+                <Image
+                  src="/images/home/pic.jpg"
+                  alt="Angie and Tomas"
+                  width={1200}
+                  height={900}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="space-y-4">
+                {home.welcome.split("\n\n").map((paragraph) => (
+                  <p key={paragraph} className="text-lg leading-9">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
             </div>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               {home.buttons.map((button) => (
@@ -52,35 +62,15 @@ export default function HomePage() {
             </div>
           </PageSection>
 
-          <PageSection title="A quick hello from us">
-            <div className="grid gap-4 md:grid-cols-[1.25fr_0.85fr]">
-              <div className="overflow-hidden rounded-lg border border-[var(--line)] bg-[var(--surface)]">
-                <Image
-                  src="/images/home/pic.jpg"
-                  alt="Angie and Tomas"
-                  width={1200}
-                  height={900}
-                  className="h-full w-full object-cover"
-                />
-              </div>
-              <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-5 text-base leading-8 text-[var(--muted)]">
-                <p>We wanted to add a little picture here so you can see us before the wedding. It feels nice to share a proper photo on the main page.</p>
-              </div>
-            </div>
-          </PageSection>
-
-          <PageSection title="Something silly at the end">
-            <div className="overflow-hidden rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 text-center">
-              <Image
-                src="/images/home/dancing_cats.gif"
-                alt="Funny dancing cats gif"
-                width={1200}
-                height={750}
-                className="mx-auto max-h-[360px] w-full object-contain"
-              />
-              <p className="mt-4 text-base leading-8 text-[var(--muted)]">A little dancing cats moment to finish the page with something fun.</p>
-            </div>
-          </PageSection>
+          <div className="overflow-hidden rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 sm:p-5">
+            <Image
+              src="/images/home/dancing_cats.gif"
+              alt="Funny dancing cats gif"
+              width={1200}
+              height={750}
+              className="mx-auto max-h-[360px] w-full object-contain"
+            />
+          </div>
         </div>
       </main>
     </SiteShell>

@@ -1,6 +1,6 @@
 const rsvpUrl =
   process.env.NEXT_PUBLIC_RSVP_URL ||
-  "https://tally.so/embed/your-form-id?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1";
+  "https://tally.so/embed/2ElPyg?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1";
 
 export type NavItem = {
   label: string;
@@ -55,19 +55,19 @@ export const navItems: NavItem[] = [
 ];
 
 export const siteMeta = {
-  title: "Tomas & Angie — 20 March 2027, Buenos Aires",
+  title: "Angie & Tomas — 20 March 2027, Buenos Aires",
   description:
-    "Tomas and Angie are getting married in Buenos Aires on 20 March 2027. Everything you need to plan your trip.",
+    "Angie and Tomas are getting married in Buenos Aires on 20 March 2027. Everything you need to plan your trip.",
   image: "/images/placeholders/hero-placeholder.svg"
 };
 
 export const home = {
-  names: "Tomas & Angie",
+  names: "Angie & Tomas",
   kicker: "are getting married",
   dateLine: "Saturday 20 March 2027 · Buenos Aires, Argentina",
   countdownTarget: "2027-03-20T17:00:00-03:00",
   welcome:
-    "We can't wait to celebrate with you. We're getting married in Buenos Aires in March 2027 and we'd love for you to be there. The wedding is on Saturday the 20th, and if your plans allow, it would be lovely to have you around from Thursday to Sunday. This site has everything you need to plan your way over, and we'll add more details here as we go.",
+    "We're getting married in Buenos Aires in March 2027 and we'd love for you to be there.\n\nWe vibecoded this website with some information, and we will upload it with all the information you'll need and more!",
   weekendLine:
     "If your plans allow it would be really nice to have you there from Thursday to Sunday.",
   locationStatus: "Venue and time coming soon",
@@ -104,9 +104,9 @@ export const weekend = {
 export const buenosAires = {
   title: "Buenos Aires",
   intro:
-    "We're biased, but Buenos Aires is one of the best cities in the world and we want you to see it properly. Give it five days at least. Walk from bohemian to upscale, from trendy to classical, from green to concrete-jungle neighbourhoods, with very different vibes and architecture.",
+    "We're biased, but Buenos Aires is one of the best cities in the world and we want you to see it properly. We recommend giving it at least five days :)",
   description:
-    "It isn't really a checklist kind of city. There are a few classic spots worth seeing, mostly around the barrios of La Boca, San Telmo, Recoleta, Puerto Madero and Palermo, but the real point of Buenos Aires is just to enjoy normal city life. Green spaces, cafés, long walks, art, and staying out much later than you planned. There's also plenty going on, museums, theatres, tango, and football. If San Lorenzo happen to be playing while you're here, it's a great, very local way to feel the city — let us know and we can help with tickets. The food in Buenos Aires is spectacular and it's not only meat. We have tons of recommendations for places to eat and things to do, so just trust us on this!",
+    "Walk from bohemian to upscale, from trendy to classical, from green to concrete-jungle neighbourhoods, with very different vibes and architecture. It isn't really a checklist kind of city. There are a few classic spots worth seeing, mostly around the barrios of La Boca, San Telmo, Recoleta, Puerto Madero and Palermo, but the real point of Buenos Aires is just to enjoy normal city life. Green spaces, cafés, long walks, art, and staying out much later than you planned. There's also plenty going on, museums, theatres, tango, and football. If there is a game going on while you are there (there probably will, in Buenos Aires there are like 20 professional teams!) we strongly recommend you to attend one! If you want to see the best team (San Lorenzo) we can sort some tickets out. The food in Buenos Aires is spectacular and it's not only meat. We have tons of recommendations for places to eat and things to do, so just trust us on this!",
   stay:
     "Airbnb is the easy option and pretty cheap here, you'll find good places for not much. For location, Palermo or Recoleta are probably your best bet. They're central and close to most of what you'll want to see. If you want somewhere quieter and more residential, have a look at Colegiales, Belgrano or Núñez. It's a big city, but taxis and Uber are cheap and everywhere, so being a bit further out really doesn't matter.",
   areas: ["Palermo", "Recoleta", "Colegiales", "Belgrano", "Núñez"],
@@ -115,17 +115,20 @@ export const buenosAires = {
     { src: "/images/buenos-aires/caminito.jpg", alt: "Caminito in La Boca" },
     { src: "/images/buenos-aires/puerto-madero.jpg", alt: "Puerto Madero waterfront" },
     { src: "/images/buenos-aires/tango.jpg", alt: "Tango in Buenos Aires" },
-    { src: "/images/buenos-aires/ateneo.jpg", alt: "Ateneo Grand Splendid" }
+    { src: "/images/buenos-aires/ateneo.jpg", alt: "Ateneo Grand Splendid" },
+    { src: "/images/buenos-aires/teatro-colon.jpg", alt: "Teatro Colón" },
+    { src: "/images/buenos-aires/malba.avif", alt: "Malba" },
+    { src: "/images/buenos-aires/san-lorenzo.jpg", alt: "San Lorenzo" }
   ]
 };
 
 export const argentinaTravel = {
   title: "Travel in Argentina",
   intro:
-    "If you're coming all this way, it's really worth seeing more of the country. Destinations are listed roughly from north to south. Argentina is enormous, about the same length as going from Portugal all the way to Estonia, and it has a very particular geography, with the Andes running down it like a spine. That gives you landscapes you won't find anywhere else, and they change completely from one end of the country to the other. Below are a few flagship ideas for first timers. There are plenty of others too, so if you want something different just ask and we'll happily point you somewhere.",
+    "If you're coming all this way, it's really worth seeing more of the country. Argentina is enormous, about the same length as going from Portugal all the way to Estonia, and it has a very particular geography, with the Andes running down it like a spine. That gives you landscapes you won't find anywhere else, and they change completely from one end of the country to the other. Below are a few flagship ideas for first timers. There are plenty of others too, so if you want something different just ask and we'll happily point you somewhere.",
   booking:
     "Most of these places need a domestic flight, they are around two hours and depending on the destination 50 to 150 euros return if you book in advance. Use metasearchers like [TurismoCity](https://turismocity.com) or [Despegar](https://www.despegar.com.ar) to compare prices and dates, then book with the airline. Domestic flights often leave from Aeroparque (AEP) rather than Ezeiza (EZE).",
-  practical: "",
+  practical: "Destinations are listed roughly from north to south.",
   daysNote:
     "Treat the suggested days as a rough minimum, handy if time is tight and you want to fit in more than one of these, which we'd recommend if you can. If you'd rather take any of them at a slower pace, or dig deeper into one place, they all reward a few extra days.",
   destinations: [
@@ -147,7 +150,7 @@ export const argentinaTravel = {
     },
     {
       name: "Salta and the North",
-      days: "4 to 5 days",
+      days: "4 to 7 days",
       airport: "fly into SLA or JUJ",
       flightTime: "about 2h15 from BA",
       images: [
@@ -257,7 +260,7 @@ export const gettingToArgentina = {
     {
       title: "Booking tips",
       body:
-        "We usually do it this way. Start on Google Flights to compare departure airports and date combinations, then book the ticket on the airline's own website if you can. The **date grid** is especially useful and very recommended if you have some flexibility in days!! [See example image](/images/travel-to-argentina/google-flights-dates-grid.png). Once you've found a good flight, book it directly on the airline's own website rather than through Google or some third party. It's usually the same price and a lot less hassle if anything changes.\n\nWe recommend [Find Cheap Flights Worldwide & Book Your Ticket - Google Flights](https://www.google.com/travel/flights) as a starting place.\n\nFor domestic flights inside Argentina, see the tips on the Travel in Argentina page, including a metasearcher to compare prices and a note on paying in pesos for a better rate.",
+        "We usually do it this way. Start on [Google Flights](https://www.google.com/travel/flights) to compare departure airports and date combinations, then book the ticket on the airline's own website if you can. The [date grid](/images/travel-to-argentina/google-flights-dates-grid.png) is especially useful and very recommended if you have some flexibility in days! Once you've found a good flight, book it directly on the airline's own website rather than through Google or some third party. It's usually the same price and a lot less hassle if anything changes.\n\nFor domestic flights inside Argentina, see the tips on the Travel in Argentina page, including a metasearcher to compare prices and a note on paying in pesos for a better rate.",
       imageButton: {
         src: "/images/travel-to-argentina/google-flights-dates-grid.png",
         alt: "Google Flights date grid example"
@@ -320,7 +323,7 @@ export const faq = {
   items: [
     {
       question: "Who do I contact?",
-      answer: "Just send us a note at hello@tomasandangie.com and we'll help."
+      answer: "Just send us a note and we'll help."
     }
   ] satisfies FaqItem[]
 };
@@ -329,12 +332,12 @@ export const rsvp = {
   title: "RSVP",
   intro: "We'd love to know if you can make it. Fill in the form below, it only takes a minute.",
   note:
-    "Let us know about any dietary needs or anything else we should know, and whether you're bringing a plus-one. If your plans aren't final yet, RSVP anyway and drop us a note if things change.",
+    "We'll ask later on about any dietary needs or anything else we should know. We'd really appreciate it if you could let us know once you know whether you'll make it so we can finish the planning. If your plans aren't final yet, you can mention that in the RSVP form too.",
   deadline: "We'll confirm a deadline soon",
   url: rsvpUrl
 };
 
 export const footer = {
-  line: "Tomas & Angie · 20 March 2027 · Buenos Aires",
-  contact: "hello@tomasandangie.com"
+  line: "Angie & Tomas · 20 March 2027 · Buenos Aires",
+  contact: ""
 };
