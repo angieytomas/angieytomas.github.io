@@ -22,7 +22,7 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(46,42,38,0.2),rgba(46,42,38,0.78))]" />
           <div className="relative z-10 flex min-h-[calc(100svh-153px)] flex-col justify-end">
             {home.kicker ? <p className="text-sm uppercase tracking-[0.22em]">{home.kicker}</p> : null}
-            <h1 className="display-font text-6xl leading-none sm:text-8xl">{home.names}</h1>
+            <h1 className="hero-font text-7xl leading-none sm:text-9xl">{home.names}</h1>
             <p className="mt-5 max-w-sm text-lg leading-8 text-[#fff4e5]">{home.dateLine}</p>
             <div className="mt-8 max-w-md">
               <Countdown target={home.countdownTarget} />
@@ -63,15 +63,6 @@ export default function HomePage() {
             </div>
           </PageSection>
 
-          <div className="overflow-hidden rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 sm:p-5">
-            <Image
-              src="/images/home/dancing_cats.gif"
-              alt="Funny dancing cats gif"
-              width={1200}
-              height={750}
-              className="mx-auto max-h-[360px] w-full object-contain"
-            />
-          </div>
         </div>
         <PageNavigation currentHref="/en/" />
       </main>

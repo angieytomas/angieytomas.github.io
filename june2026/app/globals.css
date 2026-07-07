@@ -2,16 +2,19 @@
 
 :root {
   color-scheme: light;
-  --background: #f7f3ec;
-  --paper: #fffaf2;
-  --surface: rgba(255, 250, 242, 0.82);
-  --surface-strong: #fffaf2;
-  --ink: #2e2a26;
-  --muted: #8a8178;
-  --line: rgba(46, 42, 38, 0.14);
-  --accent: #b5532e;
-  --accent-soft: #e8c9b8;
-  --olive: #69705a;
+  --background: #f8f5f1;
+  --paper: #fbf8f3;
+  --surface: #f2ece5;
+  --surface-strong: #fbf8f3;
+  --ink: #2b2a28;
+  --muted: #6d6a67;
+  --line: #ddd6cf;
+  --accent: #a78c6a;
+  --accent-soft: #efe4d8;
+  --olive: #8f8a7a;
+  --button: #2f2e2c;
+  --button-hover: #4a4743;
+  --hero-soft: #f6efe6;
 }
 
 * {
@@ -27,8 +30,11 @@ body {
   min-width: 320px;
   background: var(--background);
   color: var(--ink);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -46,11 +52,27 @@ iframe {
 }
 
 .display-font {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-libre-baskerville), Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: 0.015em;
+}
+
+.hero-font {
+  font-family: var(--font-libre-baskerville), Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: 0.045em;
+  line-height: 0.95;
+  font-size: 3.375rem !important;
+}
+
+@media (min-width: 40rem) {
+  .hero-font {
+    font-size: 6rem !important;
+  }
 }
 
 .soft-shadow {
-  box-shadow: 0 24px 70px rgba(46, 42, 38, 0.08);
+  box-shadow: none;
 }
 
 .reveal {
@@ -67,4 +89,200 @@ iframe {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+header {
+  background: rgba(248, 245, 241, 0.96) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.backdrop-blur-xl {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+main {
+  color: var(--ink);
+}
+
+footer {
+  color: #7a7670;
+}
+
+section,
+article,
+details {
+  border-color: var(--line) !important;
+}
+
+section.reveal.rounded-lg,
+article.rounded-lg,
+details.rounded-lg,
+nav[aria-label="Page navigation"] a {
+  background: var(--surface-strong) !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 10px !important;
+}
+
+section.reveal.rounded-lg {
+  padding-block: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+h1.display-font,
+h2.display-font,
+h3.display-font {
+  color: var(--ink);
+}
+
+h1.display-font {
+  letter-spacing: 0.025em;
+}
+
+h2.display-font,
+h3.display-font {
+  letter-spacing: 0.012em;
+}
+
+p,
+li {
+  font-weight: 400;
+}
+
+[class*="text-[var(--muted)]"] {
+  color: var(--muted) !important;
+}
+
+[class*="text-[var(--accent)]"] {
+  color: var(--accent) !important;
+}
+
+[class*="text-[#fff4e5]"] {
+  color: var(--hero-soft) !important;
+}
+
+[class*="bg-[var(--accent)]"] {
+  background: var(--button) !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  color: var(--paper) !important;
+  font-size: 0.78rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.13em !important;
+  min-height: 2.85rem !important;
+  transition:
+    background-color 240ms ease,
+    border-color 240ms ease,
+    color 240ms ease;
+}
+
+[class*="bg-[var(--accent)]"]:hover {
+  background: var(--button-hover) !important;
+}
+
+[class*="bg-[var(--accent-soft)]"] {
+  background: var(--accent-soft) !important;
+  color: #7c684f !important;
+}
+
+[class*="bg-[rgba(232,201,184,0.35)]"] {
+  background: rgba(167, 140, 106, 0.12) !important;
+  color: #7a6145 !important;
+}
+
+[class*="decoration-[#b5532e]"] {
+  text-decoration-color: var(--accent) !important;
+}
+
+[class*="linear-gradient"] {
+  background: rgba(43, 42, 40, 0.42) !important;
+}
+
+.hero-font + p {
+  font-size: 0.98rem;
+  letter-spacing: 0.04em;
+  line-height: 1.75;
+  max-width: 30rem;
+}
+
+[aria-label="Countdown to the wedding"] {
+  gap: 0.85rem;
+}
+
+[aria-label="Countdown to the wedding"] > div {
+  border-color: rgba(246, 239, 230, 0.36) !important;
+}
+
+[aria-label="Countdown to the wedding"] [class*="font-semibold"] {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500 !important;
+  letter-spacing: 0.02em;
+}
+
+[aria-label="Countdown to the wedding"] [class*="uppercase"] {
+  font-weight: 500;
+  letter-spacing: 0.18em !important;
+}
+
+.rounded-full {
+  border-radius: 8px !important;
+}
+
+.rounded-lg,
+.rounded-md {
+  border-radius: 10px !important;
+}
+
+.border,
+.border-t,
+.border-b,
+.border-l-2 {
+  border-color: var(--line) !important;
+}
+
+.border-l-2 {
+  border-left-color: var(--accent-soft) !important;
+}
+
+[class*="tracking-[0.14em]"],
+[class*="tracking-[0.16em]"],
+[class*="tracking-[0.18em]"],
+[class*="tracking-[0.22em]"] {
+  font-weight: 500 !important;
+}
+
+button,
+a {
+  transition:
+    color 240ms ease,
+    background-color 240ms ease,
+    border-color 240ms ease;
+}
+
+button:focus-visible,
+a:focus-visible,
+summary:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 3px;
+}
+
+summary {
+  font-weight: 500 !important;
+}
+
+iframe {
+  background: var(--surface-strong);
+}
+
+nav[aria-label="Page navigation"] {
+  border-color: var(--line) !important;
+}
+
+nav[aria-label="Page navigation"] a {
+  box-shadow: none;
+}
+
+nav[aria-label="Page navigation"] a:hover {
+  border-color: var(--accent) !important;
+  background: var(--paper) !important;
 }

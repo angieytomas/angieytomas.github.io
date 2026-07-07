@@ -67,7 +67,7 @@ export const home = {
   dateLine: "Saturday 20 March 2027 · Invernadero · Buenos Aires, Argentina",
   countdownTarget: "2027-03-20T17:00:00-03:00",
   welcome:
-    "We're getting married in Buenos Aires in March 2027 and we'd love for you to be there.\n\nWe vibecoded this website with some information, and we will upload it with all the information you'll need and more!",
+    "We're getting married in Buenos Aires on 20 March 2027 and we'd love for you to be there.\n\nWe vibecoded this website with some information, and we will upload it with all the information you'll need and more!",
   buttons: [
     { label: "RSVP", href: "/en/rsvp/" },
     { label: "Plan your trip", href: "/en/the-weekend/" }
@@ -86,7 +86,7 @@ export const weekend = {
     {
       day: "Saturday 20 March 2027",
       title: "The Wedding",
-      body: "This is the one. The wedding will be at [Invernadero](https://www.google.de/maps/place/INVERNADERO/@-34.5849576,-58.400764,17z/data=!4m6!3m5!1s0x95bccb6151de0ef9:0x960b059bb4ca475d!8m2!3d-34.5849576!4d-58.3981891!16s%2Fg%2F11fngv5dnr?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D). Time TBC, but probably 19-02."
+      body: "This is the one. The wedding will be at [Invernadero](https://www.google.de/maps/place/INVERNADERO/@-34.5849576,-58.400764,17z/data=!4m6!3m5!1s0x95bccb6151de0ef9:0x960b059bb4ca475d!8m2!3d-34.5849576!4d-58.3981891!16s%2Fg%2F11fngv5dnr?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D). Time TBC, but probably 7 PM - 2 AM."
     },
     {
       day: "Sunday 21 March 2027",
